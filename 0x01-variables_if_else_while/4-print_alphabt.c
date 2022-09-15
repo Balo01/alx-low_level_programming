@@ -1,21 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
-* main - print if the number is positive, zero, or negative
+* main - print the alphabet without q and e.
 *
-* Description: using the main function
-* this program prints "Programming is positive, zero, or negative
-* Return: 0
+* Return: Alwayd 0 (success)
 */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
-{
-8if (ch != 'e' && ch != 'q')
-{
-	putchar(ch);
+	int i;
+
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-}
-putchar('\n');
-return (0);
-}
+
