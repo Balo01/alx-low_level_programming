@@ -8,12 +8,15 @@
 
 void print_alphabet(void)
 {
-	char alpha;
-	for (alpha = ‘a’; alpha <= ‘z’; alpha++)
-	{
-		_putchar (alpha);
-	}
+	char c = 'a';
 
-	_putchar(‘\n’);
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+
+	}
+	_putchar('\n');
+
 }
 
